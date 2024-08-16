@@ -369,7 +369,43 @@ nav .close-icon{
 .servicos .row-card-item  p.descricao-servico {
     transition:  0.3s;
 }
+
+ /* Dados */
+
+ .dados {
+    background: #d3e6fd;
+    margin-bottom: 15px;
+ }
  
+ .dados .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .dados .dados-item {
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+ }
+
+ .dados .dados-item img {
+    background-color: #4f9bf98a;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+ }
+
+ .dados .dados-item p {
+    font-size: 18px;
+ }
+
+ .dados .dados-item p strong {
+    font-size: 20px;
+    ma
+
+ }
 
 @media(max-width: 830px){
   /* Menu mobile */
