@@ -7,6 +7,7 @@
     text-decoration: none;
     outline: none;
     font-family: "Inter", sans-serif;
+    margin-top: 15px;
 }
 
 body {
@@ -177,6 +178,7 @@ nav .close-icon{
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .depoimentos .card-item {
@@ -466,7 +468,24 @@ nav .close-icon{
     border-color: #4f9cf9 ;
 }
 
+.contato-info .right-side textarea {
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    resize: none;
+}
 
+.contato-info .right-side button {
+border:  none;
+margin-bottom: 10px
+
+;
+}
 
 @media(max-width: 830px) {
   /* Menu mobile */
@@ -505,4 +524,86 @@ nav .close-icon{
     right: 28px;
 }
 
+   /* Pagina Home responsiva */
+
+
+   .faca-mais .faca-mais-text {
+    margin-top: 10px;
+    padding-top: 0 20px;
+    order: 1;
+   }
+
+   .faca-mais .container {
+    flex-direction: column;
+   }
+
+   .faca-mais .faca-mais-text h3 {
+     font-size: 48px;
+   }
+
+   .faca-mais .faca-mais-text,
+   .faca-mais .faca-mais-img {
+    width: 100%;
+   }
+
+
+   /* Banner responsiva */
+    .banner .banner-text {
+        padding:  0;
+        margin: 80px;
+    }
+
+    .banner .banner-text h1 {
+      font-size: 80px;
+    }
+
+    .banner .banner-text p {
+        font-size: 15px;
+    }
+
+    .depoimentos .card-item{
+        width: 100%;
+    }
+
+     /* Pagina Sobre responsiva */
+
+     .sobre .container {
+        flex-direction: column-reverse;
+        margin-bottom: 2px;
+     }
+
+     .sobre .sobre-img,
+     .sobre .sobre-text {
+        width: 100%;
+     }
+
+     .sobre .sobre-text {
+        margin-top: 40px;
+     }
+
+      /* Pagina Contato responsiva */
+
+      .contato .contato-info {
+        flex-direction: column-reverse;
+      }
+
+    .contato-info .right-side,
+    .contato-info .left-side {
+      width: 100%;
+    }
+
+    .contato-info .right-side{
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-width: 830px)  {
+    .banner .banner-text h1 {
+        font-size: 50px;
+    }
+
+    .faca-mais .faca-mais-text h3 {
+       font-size: 40px;
+    }
 }
